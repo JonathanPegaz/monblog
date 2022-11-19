@@ -13,7 +13,6 @@ class App {
 
     enableDropdowns() {
         const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-        console.log(dropdownElementList);
         dropdownElementList.map( (dropdownToggleEL) => {
             return new Dropdown(dropdownToggleEL)
         });
